@@ -1,0 +1,426 @@
+#cells-container {
+    width: 400px;
+    height: 400px;
+    display: grid;
+
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "cell-0x0 cell-1x0 cell-2x0 cell-3x0 cell-4x0 cell-5x0 cell-6x0 cell-7x0 cell-8x0 cell-9x0"
+        "cell-0x1 cell-1x1 cell-2x1 cell-3x1 cell-4x1 cell-5x1 cell-6x1 cell-7x1 cell-8x1 cell-9x1"
+        "cell-0x2 cell-1x2 cell-2x2 cell-3x2 cell-4x2 cell-5x2 cell-6x2 cell-7x2 cell-8x2 cell-9x2"
+        "cell-0x3 cell-1x3 cell-2x3 cell-3x3 cell-4x3 cell-5x3 cell-6x3 cell-7x3 cell-8x3 cell-9x3"
+        "cell-0x4 cell-1x4 cell-2x4 cell-3x4 cell-4x4 cell-5x4 cell-6x4 cell-7x4 cell-8x4 cell-9x4"
+        "cell-0x5 cell-1x5 cell-2x5 cell-3x5 cell-4x5 cell-5x5 cell-6x5 cell-7x5 cell-8x5 cell-9x5"
+        "cell-0x6 cell-1x6 cell-2x6 cell-3x6 cell-4x6 cell-5x6 cell-6x6 cell-7x6 cell-8x6 cell-9x6"
+        "cell-0x7 cell-1x7 cell-2x7 cell-3x7 cell-4x7 cell-5x7 cell-6x7 cell-7x7 cell-8x7 cell-9x7"
+        "cell-0x8 cell-1x8 cell-2x8 cell-3x8 cell-4x8 cell-5x8 cell-6x8 cell-7x8 cell-8x8 cell-9x8"
+        "cell-0x9 cell-1x9 cell-2x9 cell-3x9 cell-4x9 cell-5x9 cell-6x9 cell-7x9 cell-8x9 cell-9x9"
+}
+
+@media(max-width:420px) {
+    #cells-container {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+#cell-0x0 {
+    grid-area: cell-0x0;
+}
+
+#cell-0x1 {
+    grid-area: cell-0x1;
+}
+
+#cell-0x2 {
+    grid-area: cell-0x2;
+}
+
+#cell-0x3 {
+    grid-area: cell-0x3;
+}
+
+#cell-0x4 {
+    grid-area: cell-0x4;
+}
+
+#cell-0x5 {
+    grid-area: cell-0x5;
+}
+
+#cell-0x6 {
+    grid-area: cell-0x6;
+}
+
+#cell-0x7 {
+    grid-area: cell-0x7;
+}
+
+#cell-0x8 {
+    grid-area: cell-0x8;
+}
+
+#cell-0x9 {
+    grid-area: cell-0x9;
+}
+
+#cell-0x1 {
+    grid-area: cell-0x1;
+}
+
+#cell-1x1 {
+    grid-area: cell-1x1;
+}
+
+#cell-2x1 {
+    grid-area: cell-2x1;
+}
+
+#cell-3x1 {
+    grid-area: cell-3x1;
+}
+
+#cell-4x1 {
+    grid-area: cell-4x1;
+}
+
+#cell-5x1 {
+    grid-area: cell-5x1;
+}
+
+#cell-6x1 {
+    grid-area: cell-6x1;
+}
+
+#cell-7x1 {
+    grid-area: cell-7x1;
+}
+
+#cell-8x1 {
+    grid-area: cell-8x1;
+}
+
+#cell-9x1 {
+    grid-area: cell-9x1;
+}
+
+#cell-0x2 {
+    grid-area: cell-0x2;
+}
+
+#cell-1x2 {
+    grid-area: cell-1x2;
+}
+
+#cell-2x2 {
+    grid-area: cell-2x2;
+}
+
+#cell-3x2 {
+    grid-area: cell-3x2;
+}
+
+#cell-4x2 {
+    grid-area: cell-4x2;
+}
+
+#cell-5x2 {
+    grid-area: cell-5x2;
+}
+
+#cell-6x2 {
+    grid-area: cell-6x2;
+}
+
+#cell-7x2 {
+    grid-area: cell-7x2;
+}
+
+#cell-8x2 {
+    grid-area: cell-8x2;
+}
+
+#cell-9x2 {
+    grid-area: cell-9x2;
+}
+
+#cell-0x3 {
+    grid-area: cell-0x3;
+}
+
+#cell-1x3 {
+    grid-area: cell-1x3;
+}
+
+#cell-2x3 {
+    grid-area: cell-2x3;
+}
+
+#cell-3x3 {
+    grid-area: cell-3x3;
+}
+
+#cell-4x3 {
+    grid-area: cell-4x3;
+}
+
+#cell-5x3 {
+    grid-area: cell-5x3;
+}
+
+#cell-6x3 {
+    grid-area: cell-6x3;
+}
+
+#cell-7x3 {
+    grid-area: cell-7x3;
+}
+
+#cell-8x3 {
+    grid-area: cell-8x3;
+}
+
+#cell-9x3 {
+    grid-area: cell-9x3;
+}
+
+#cell-0x4 {
+    grid-area: cell-0x4;
+}
+
+#cell-1x4 {
+    grid-area: cell-1x4;
+}
+
+#cell-2x4 {
+    grid-area: cell-2x4;
+}
+
+#cell-3x4 {
+    grid-area: cell-3x4;
+}
+
+#cell-4x4 {
+    grid-area: cell-4x4;
+}
+
+#cell-5x4 {
+    grid-area: cell-5x4;
+}
+
+#cell-6x4 {
+    grid-area: cell-6x4;
+}
+
+#cell-7x4 {
+    grid-area: cell-7x4;
+}
+
+#cell-8x4 {
+    grid-area: cell-8x4;
+}
+
+#cell-9x4 {
+    grid-area: cell-9x4;
+}
+
+#cell-0x5 {
+    grid-area: cell-0x5;
+}
+
+#cell-1x5 {
+    grid-area: cell-1x5;
+}
+
+#cell-2x5 {
+    grid-area: cell-2x5;
+}
+
+#cell-3x5 {
+    grid-area: cell-3x5;
+}
+
+#cell-4x5 {
+    grid-area: cell-4x5;
+}
+
+#cell-5x5 {
+    grid-area: cell-5x5;
+}
+
+#cell-6x5 {
+    grid-area: cell-6x5;
+}
+
+#cell-7x5 {
+    grid-area: cell-7x5;
+}
+
+#cell-8x5 {
+    grid-area: cell-8x5;
+}
+
+#cell-9x5 {
+    grid-area: cell-9x5;
+}
+
+#cell-0x6 {
+    grid-area: cell-0x6;
+}
+
+#cell-1x6 {
+    grid-area: cell-1x6;
+}
+
+#cell-2x6 {
+    grid-area: cell-2x6;
+}
+
+#cell-3x6 {
+    grid-area: cell-3x6;
+}
+
+#cell-4x6 {
+    grid-area: cell-4x6;
+}
+
+#cell-5x6 {
+    grid-area: cell-5x6;
+}
+
+#cell-6x6 {
+    grid-area: cell-6x6;
+}
+
+#cell-7x6 {
+    grid-area: cell-7x6;
+}
+
+#cell-8x6 {
+    grid-area: cell-8x6;
+}
+
+#cell-9x6 {
+    grid-area: cell-9x6;
+}
+
+#cell-0x7 {
+    grid-area: cell-0x7;
+}
+
+#cell-1x7 {
+    grid-area: cell-1x7;
+}
+
+#cell-2x7 {
+    grid-area: cell-2x7;
+}
+
+#cell-3x7 {
+    grid-area: cell-3x7;
+}
+
+#cell-4x7 {
+    grid-area: cell-4x7;
+}
+
+#cell-5x7 {
+    grid-area: cell-5x7;
+}
+
+#cell-6x7 {
+    grid-area: cell-6x7;
+}
+
+#cell-7x7 {
+    grid-area: cell-7x7;
+}
+
+#cell-8x7 {
+    grid-area: cell-8x7;
+}
+
+#cell-9x7 {
+    grid-area: cell-9x7;
+}
+
+#cell-0x8 {
+    grid-area: cell-0x8;
+}
+
+#cell-1x8 {
+    grid-area: cell-1x8;
+}
+
+#cell-2x8 {
+    grid-area: cell-2x8;
+}
+
+#cell-3x8 {
+    grid-area: cell-3x8;
+}
+
+#cell-4x8 {
+    grid-area: cell-4x8;
+}
+
+#cell-5x8 {
+    grid-area: cell-5x8;
+}
+
+#cell-6x8 {
+    grid-area: cell-6x8;
+}
+
+#cell-7x8 {
+    grid-area: cell-7x8;
+}
+
+#cell-8x8 {
+    grid-area: cell-8x8;
+}
+
+#cell-9x8 {
+    grid-area: cell-9x8;
+}
+
+#cell-0x9 {
+    grid-area: cell-0x9;
+}
+
+#cell-1x9 {
+    grid-area: cell-1x9;
+}
+
+#cell-2x9 {
+    grid-area: cell-2x9;
+}
+
+#cell-3x9 {
+    grid-area: cell-3x9;
+}
+
+#cell-4x9 {
+    grid-area: cell-4x9;
+}
+
+#cell-5x9 {
+    grid-area: cell-5x9;
+}
+
+#cell-6x9 {
+    grid-area: cell-6x9;
+}
+
+#cell-7x9 {
+    grid-area: cell-7x9;
+}
+
+#cell-8x9 {
+    grid-area: cell-8x9;
+}
+
+#cell-9x9 {
+    grid-area: cell-9x9;
+}

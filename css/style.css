@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    color: rgba(16, 91, 110, 0.911)
+}
+
+.hidden {
+    display: none !important;
+}
+
+h1 {
+    font-size: 16pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+@keyframes blink {
+    0% {
+        opactity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+h2 {
+    font-size: 12pt;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+#game-status {
+    height: 20px;
+}
+
+#points {
+    font-weight: bold;
+    text-align: right;
+}
+
+.cells {
+    border: 1px solid rgba(0, 197, 247, 0.911);
+    border-radius: 6px;
+    transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1)
+}
+
+.PACMAN {
+    background-color: rgba(196, 236, 247, 0.911) !important;
+    background-image: url(../img/pacman.gif) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.PACMAN-UP {
+    transform: rotate(-90deg);
+}
+
+.PACMAN-DOWN {
+    transform: rotate(90deg);
+}
+
+.PACMAN-LEFT {
+    transform: rotateY(180deg);
+}
+
+.DOT {
+    background-color: rgba(196, 236, 247, 0.911);
+    background-image: url('../img/dot.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.EMPTY {
+    background-color: rgba(196, 236, 247, 0.911);
+}
+
+.OBSTACLE {
+    background-color: #f49b49;
+    opacity: 0.8;
+    background: repeating-linear-gradient(45deg, #c37c3a, #c37c3a 2px, #f49b49 2px, #f49b49 10px);
+    border-color: #c37c3a
+}
+
+.ENEMY {
+    background-color: rgba(196, 236, 247, 0.911);
+    background-image: url('../img/ghost.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+button {
+    background: transparent;
+    border: 1px solid rgba(16, 91, 110, 0.911);
+    color: rgba(16, 91, 110, 0.911);
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    border: 2px solid rgba(38, 175, 209, 0.911);
+    color: rgba(38, 175, 209, 0.911);
+    transform: rotate(-2deg);
+}

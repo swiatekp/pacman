@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PACMAN</title>
+    <script type="module" src="script/script.js" defer></script>
+    <script type="module" src="script/classes/Pacman.js" defer></script>
+    <script type="module" src="script/divs.js" defer></script>
+    <script type="module" src="script/lvls/gridLvl1.js" defer></script>
+    <script type="module" src="script/lvls/gridLvl2.js" defer></script>
+    <script type="module" src="script/lvls/gridLvl3.js" defer></script>
+    <script type="module" src="script/lvls/gridLvl4.js" defer></script>
+    <script type="module" src="script/lvls/gridLvl5.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,700;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <h1>Pacman</h1>
+    </div>
+    <div>
+        <h2 id="game-status">Wybierz poziom aby uruchomić grę</h2>
+    </div>
+    <div id="cells-container" class="hidden">
+        <div class="cells" id="cell-0x0"></div>
+        <div class="cells" id="cell-0x1"></div>
+        <div class="cells" id="cell-0x2"></div>
+        <div class="cells" id="cell-0x3"></div>
+        <div class="cells" id="cell-0x4"></div>
+        <div class="cells" id="cell-0x5"></div>
+        <div class="cells" id="cell-0x6"></div>
+        <div class="cells" id="cell-0x7"></div>
+        <div class="cells" id="cell-0x8"></div>
+        <div class="cells" id="cell-0x9"></div>
+
+        <div class="cells" id="cell-1x0"></div>
+        <div class="cells" id="cell-1x1"></div>
+        <div class="cells" id="cell-1x2"></div>
+        <div class="cells" id="cell-1x3"></div>
+        <div class="cells" id="cell-1x4"></div>
+        <div class="cells" id="cell-1x5"></div>
+        <div class="cells" id="cell-1x6"></div>
+        <div class="cells" id="cell-1x7"></div>
+        <div class="cells" id="cell-1x8"></div>
+        <div class="cells" id="cell-1x9"></div>
+
+        <div class="cells" id="cell-2x0"></div>
+        <div class="cells" id="cell-2x1"></div>
+        <div class="cells" id="cell-2x2"></div>
+        <div class="cells" id="cell-2x3"></div>
+        <div class="cells" id="cell-2x4"></div>
+        <div class="cells" id="cell-2x5"></div>
+        <div class="cells" id="cell-2x6"></div>
+        <div class="cells" id="cell-2x7"></div>
+        <div class="cells" id="cell-2x8"></div>
+        <div class="cells" id="cell-2x9"></div>
+
+        <div class="cells" id="cell-3x0"></div>
+        <div class="cells" id="cell-3x1"></div>
+        <div class="cells" id="cell-3x2"></div>
+        <div class="cells" id="cell-3x3"></div>
+        <div class="cells" id="cell-3x4"></div>
+        <div class="cells" id="cell-3x5"></div>
+        <div class="cells" id="cell-3x6"></div>
+        <div class="cells" id="cell-3x7"></div>
+        <div class="cells" id="cell-3x8"></div>
+        <div class="cells" id="cell-3x9"></div>
+
+        <div class="cells" id="cell-4x0"></div>
+        <div class="cells" id="cell-4x1"></div>
+        <div class="cells" id="cell-4x2"></div>
+        <div class="cells" id="cell-4x3"></div>
+        <div class="cells" id="cell-4x4"></div>
+        <div class="cells" id="cell-4x5"></div>
+        <div class="cells" id="cell-4x6"></div>
+        <div class="cells" id="cell-4x7"></div>
+        <div class="cells" id="cell-4x8"></div>
+        <div class="cells" id="cell-4x9"></div>
+
+        <div class="cells" id="cell-5x0"></div>
+        <div class="cells" id="cell-5x1"></div>
+        <div class="cells" id="cell-5x2"></div>
+        <div class="cells" id="cell-5x3"></div>
+        <div class="cells" id="cell-5x4"></div>
+        <div class="cells" id="cell-5x5"></div>
+        <div class="cells" id="cell-5x6"></div>
+        <div class="cells" id="cell-5x7"></div>
+        <div class="cells" id="cell-5x8"></div>
+        <div class="cells" id="cell-5x9"></div>
+
+        <div class="cells" id="cell-6x0"></div>
+        <div class="cells" id="cell-6x1"></div>
+        <div class="cells" id="cell-6x2"></div>
+        <div class="cells" id="cell-6x3"></div>
+        <div class="cells" id="cell-6x4"></div>
+        <div class="cells" id="cell-6x5"></div>
+        <div class="cells" id="cell-6x6"></div>
+        <div class="cells" id="cell-6x7"></div>
+        <div class="cells" id="cell-6x8"></div>
+        <div class="cells" id="cell-6x9"></div>
+
+        <div class="cells" id="cell-7x0"></div>
+        <div class="cells" id="cell-7x1"></div>
+        <div class="cells" id="cell-7x2"></div>
+        <div class="cells" id="cell-7x3"></div>
+        <div class="cells" id="cell-7x4"></div>
+        <div class="cells" id="cell-7x5"></div>
+        <div class="cells" id="cell-7x6"></div>
+        <div class="cells" id="cell-7x7"></div>
+        <div class="cells" id="cell-7x8"></div>
+        <div class="cells" id="cell-7x9"></div>
+
+        <div class="cells" id="cell-8x0"></div>
+        <div class="cells" id="cell-8x1"></div>
+        <div class="cells" id="cell-8x2"></div>
+        <div class="cells" id="cell-8x3"></div>
+        <div class="cells" id="cell-8x4"></div>
+        <div class="cells" id="cell-8x5"></div>
+        <div class="cells" id="cell-8x6"></div>
+        <div class="cells" id="cell-8x7"></div>
+        <div class="cells" id="cell-8x8"></div>
+        <div class="cells" id="cell-8x9"></div>
+
+        <div class="cells" id="cell-9x0"></div>
+        <div class="cells" id="cell-9x1"></div>
+        <div class="cells" id="cell-9x2"></div>
+        <div class="cells" id="cell-9x3"></div>
+        <div class="cells" id="cell-9x4"></div>
+        <div class="cells" id="cell-9x5"></div>
+        <div class="cells" id="cell-9x6"></div>
+        <div class="cells" id="cell-9x7"></div>
+        <div class="cells" id="cell-9x8"></div>
+        <div class="cells" id="cell-9x9"></div>
+    </div>
+    <div id="levels">
+        <button id="lvl1">Poziom 1</button>
+        <button id="lvl2">Poziom 2</button>
+        <button id="lvl3">Poziom 3</button>
+        <button id="lvl4">Poziom 4</button>
+        <button id="lvl5">Poziom 5</button>
+    </div>
+    <div id="points-div">
+        <p>Punkty: <span id="points">0</span></p>
+    </div>
+    <div id="controls-div" class="hidden">
+        <button id="pause">Pauza</button>
+        <button id="restart">Restart</button>
+        <button id="exit">Wyjście</button>
+    </div>
+</body>
+
+</html>
